@@ -1,7 +1,6 @@
 {
   "name": "w3m-e",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
   "devDependencies": {
     "parcel": "^2.9.3",
@@ -10,9 +9,11 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build --no-source-maps"
   },
   "dependencies": {
-    "@web3modal/wagmi": "^3.0.2"
+    "@wagmi/core": "^1.4.3",
+    "@web3modal/wagmi": "^3.0.2",
+    "viem": "^1.15.3"
   }
 }
